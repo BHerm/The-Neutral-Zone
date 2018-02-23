@@ -119,21 +119,49 @@ header a:hover{
 .modal-content{
   background-color: #f4f4f4;
   margin: 20% auto;
-  padding: 20px;
+  padding: 0px;
   width: 50%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
   0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: .8s;
+}
+
+.modal-header{
+  background: #35424a;
+  padding: 15px;
+  border-bottom: 5px solid #87CEFA;
+}
+
+.modal-title{
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
 }
 
 .close-button{
   float: right;
   font-size: 30px;
+  color: #ffffff;
 }
 
 .close-button:hover, .close-button:focus{
-  color: #000;
+  color: #C0C0C0;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-body{
+  margin: 10px;
+  height: 300px;
+}
+
+@keyframes modalopen {
+  from{opacity: 0}
+  to{opacity: 1}
+
 }
 
 /* footer */
