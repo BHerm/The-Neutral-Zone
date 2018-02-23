@@ -65,6 +65,20 @@ header a:hover{
   font-weight: bold;
 }
 
+#open-button{
+  background-color: #35424a;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#open-button:hover{
+  color:#cccccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* home-page */
 .homepage{
   min-height: 400px;
@@ -106,7 +120,7 @@ header a:hover{
   background-color: #f4f4f4;
   margin: 20% auto;
   padding: 20px;
-  width: 70%;
+  width: 50%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
   0 7px 20px 0 rgba(0,0,0,0.17);
 }
