@@ -154,9 +154,53 @@ header a:hover{
 }
 
 .modal-body{
-  margin: 10px;
-  height: 300px;
+  border: 3px solid #f1f1f1;
 }
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-button{
+  background-color: #87CEFA;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover{
+  opacity: .8;
+}
+
+span.psw{
+  float:left;
+}
+
+span.register{
+  float: right;
+}
+
+/** Register Modal */
+.modal-rgstr{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,.5);
+}
+
 
 @keyframes modalopen {
   from{opacity: 0}
@@ -182,6 +226,12 @@ footer{
   padding-left: 5px;
 }
 
+/**span.contact{
+  padding-right: 5px;
+  font-size: 12px;
+  color: white;
+}*/
+
 /* media queries */
 @media(max-width: 760px) {
   header .logo,
@@ -191,6 +241,13 @@ footer{
     text-align: center;
     width: 100%;
   }
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
 }
 
 @media(max-width: 400px) {

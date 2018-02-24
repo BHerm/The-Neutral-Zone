@@ -25,8 +25,29 @@
 
   <div id="loginmodal" class="modal">
     <div class="modal-content">
-      <span class="close-button">&times</span>
-      <p>hi</p>
+      <div class="modal-header">
+        <span class="close-button">&times</span>
+        <h1 class="modal-title">login</h1>
+      </div>
+
+      <div class="modal-body">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="submit-button">Login</button>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <span class="register">Don't have an account? <a href="#"> Register </a></span>
+      </div>
     </div>
   </div>
 

@@ -24,6 +24,8 @@
     </div>
   </header>
 
+
+  <!-- The Login Popup window -->
   <div id="loginmodal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -38,11 +40,27 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="submit">Login</button>
+        <button type="submit" class="submit-button">Login</button>
 
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <span class="register">Don't have an account? <a href="#"> Register </a></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- The Register Popup window -->
+  <div id="register-modal" class="modal-rgstr">
+    <div class="register-modal-content">
+      <div class="modal-header">
+        <span class="close-button">&times</span>
+        <h1 class="modal-title">Register</h1>
       </div>
     </div>
   </div>
@@ -57,6 +75,7 @@
 
   <footer>
     <p class="foot-writing">The Neutral Zone, Copyright &copy; 2018 </p>
+    <!--<span class="contact"><a href="#">Contact Us</a></span>-->
   </footer>
 
 
