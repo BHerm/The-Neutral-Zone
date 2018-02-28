@@ -5,7 +5,9 @@ body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   background-color: white;
-  background:url('../img/background.jpg') no-repeat;
+  background:url('../img/ice.jpg') no-repeat;
+  background-position: center;
+  backgr
 }
 
 /* global */
@@ -26,22 +28,26 @@ header{
   color: #ffffff;
   padding-top:0px;
   min-height: 70px;
-  border-bottom:3px solid #87CEFA;
-
+  border-bottom:3px solid #1e90ff;
 }
 
 header a{
-  color: #87CEFA;
+  color: #1e90ff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 700;
+  text-shadow: -.5px -.5px 0 #000,
+    .5px -.5px 0 #000,
+    -.5px .5px 0 #000,
+    .5px .5px 0 #000;
 }
 
 header li{
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
-  border: 1px solid #87CEFA;
+  margin: 10px;
 }
 
 header .logo{
@@ -51,14 +57,14 @@ header .logo{
 
 header .logo h1{
   margin: 0;
-  color: #87CEFA;
+  color: #1e90ff;
   text-decoration: underline overline #ffffff;
   font-size: 45px;
 }
 
 header nav{
   float: right;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 header a:hover{
@@ -71,7 +77,12 @@ header a:hover{
   border: none;
   text-transform: uppercase;
   font-size: 16px;
-  color: #87CEFA;
+  font-weight: 700;
+  color: #1e90ff;
+  text-shadow: -.5px -.5px 0 #000,
+    .5px -.5px 0 #000,
+    -.5px .5px 0 #000,
+    .5px .5px 0 #000;
 }
 
 #open-button:hover{
@@ -94,7 +105,7 @@ header a:hover{
   font-size: 55px;
   margin-bottom: 10px;
   opacity: 1;
-  color: #87CEFA;
+  color: #1e90ff;
   text-shadow: 1.5px 1.5px #404040;
 }
 
@@ -129,9 +140,9 @@ header a:hover{
 }
 
 .modal-header{
-  background: #35424a;
+  background: #b3b3b3;
   padding: 15px;
-  border-bottom: 5px solid #87CEFA;
+  border-bottom: 5px solid #1e90ff;
 }
 
 .modal-title{
@@ -168,7 +179,7 @@ input[type=text], input[type=password] {
 }
 
 .submit-button{
-  background-color: #87CEFA;
+  background-color: #1e90ff;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -224,7 +235,7 @@ span.register{
 .about-title{
   font-family: cursive;
   font-size: 60px;
-  color: #87CEFA;
+  color: #1e90ff;
   text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
@@ -235,7 +246,7 @@ span.register{
 }
 
 .about-container{
-  border: 2px solid #87CEFA;
+  border: 2px solid #1e90ff;
   margin-left: 10%;
   margin-right: 10%;
   background: #ffffff;
@@ -249,11 +260,11 @@ span.register{
 /* footer */
 footer{
   position: absolute;
-  background:#35424a;
+  background:#b3b3b3;
   color: #ffffff;
   padding-top:10px;
   min-height: 40px;
-  border-top:5px solid #87CEFA;
+  border-top:3px solid #1e90ff;
   bottom: 0;
   left: 0;
   right: 0;
