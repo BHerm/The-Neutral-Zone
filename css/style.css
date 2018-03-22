@@ -10,7 +10,16 @@ body, #slider, .wrap, .slide-content {
   overflow-x: hidden;
 }
 
-.wrap{position: relative;}
+.wrap{
+  position: absolute;
+  display: block;
+  max-width: 75%;
+  max-height: 75%;
+  border: 3px solid #cccccc;
+  margin-left: 13.5%;
+  margin-right: 13.5%;
+  margin-top: 2%;
+}
 
 /* global */
 .container {
@@ -244,6 +253,12 @@ span.register{
   width: 50%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
   0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: .8s;
+}
+
+.register-modal-body{
+  border: 3px solid #f1f1f1;
 }
 
 
