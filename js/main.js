@@ -1,31 +1,28 @@
-//get modal element
-var modal = document.getElementById('loginmodal');
 
-// get open modal button
-var openBtn = document.getElementById('open-button');
+$(function(){
+  $("#open-button").hide().fadeIn(1000);
+  $("#home-button").hide().fadeIn(1000);
+  $("#about-button").hide().fadeIn(1000);
+  $("#logo").hide().fadeIn(1000);
 
-//close button
-var closeBtn = document.getElementsByClassName('close-button')[0];
+  // open the login screen on login click
+  $("#open-button").on('click', function(){
+    $("#loginmodal").css({display: 'block'});
+  });
 
+  //close when click the x
+  $("#closelogin").on('click', function(){
+    $("#loginmodal").css({display: 'none'});
+  });
 
-//function to open openmodal
-function openmodal(){
-  modal.style.display = 'block';
-}
+  $("#register-button").on('click', function(){
+    $("#register-modal").css({display: 'block'});
+    $("#loginmodal").css({display: 'none'});
+  });
 
-//function to close openmodal
-function closemodal(){
-  modal.style.display = 'none';
-}
+  $("#closeregister").on('click', function(){
+    $("#register-modal").css({display: 'none'});
+    $("#loginmodal").css({display: 'block'});
+  });
 
-//close modal if click outside box
-function outsideClick(e){
-  if (e.target == modal) {
-    modal.style.display = 'none';
-  }
-}
-
-//listen for click
-openBtn.addEventListener('click', openmodal);
-closeBtn.addEventListener('click', closemodal);
-window.addEventListener('click', outsideClick);
+});

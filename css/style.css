@@ -1,14 +1,16 @@
 
-
-body {
+body, #slider, .wrap, .slide-content {
   margin: 0;
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
-  background-color: white;
-  background:url('../img/ice.jpg') no-repeat;
+  /*background:url('../img/ice.jpg') no-repeat;*/
   background-position: center;
-  backgr
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
+
+.wrap{position: relative;}
 
 /* global */
 .container {
@@ -24,11 +26,13 @@ ul{
 
 /*header */
 header{
-  background:#b3b3b3;
+  /*ghost white*/
+  background:#f8f8ff;
   color: #ffffff;
   padding-top:0px;
   min-height: 70px;
-  border-bottom:3px solid #1e90ff;
+  border-top:5px solid #1e90ff;
+  border-bottom: 2px solid #cccccc;
 }
 
 header a{
@@ -36,11 +40,11 @@ header a{
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 700;
-  text-shadow: -.5px -.5px 0 #000,
+  font-weight: 500;
+  /*text-shadow: -.5px -.5px 0 #000,
     .5px -.5px 0 #000,
     -.5px .5px 0 #000,
-    .5px .5px 0 #000;
+    .5px .5px 0 #000;*/
 }
 
 header li{
@@ -73,16 +77,16 @@ header a:hover{
 }
 
 #open-button{
-  background-color: #b3b3b3;
+  background-color: #f8f8ff;
   border: none;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1e90ff;
-  text-shadow: -.5px -.5px 0 #000,
+  /*text-shadow: -.5px -.5px 0 #000,
     .5px -.5px 0 #000,
     -.5px .5px 0 #000,
-    .5px .5px 0 #000;
+    .5px .5px 0 #000;*/
 }
 
 #open-button:hover{
@@ -93,14 +97,34 @@ header a:hover{
 
 /* home-page */
 .homepage{
-  min-height: 400px;
+  height: 100vh;
   background-size: cover;
   text-align: center;
   opacity: 1;
   color:#ffffff;
 }
 
-.homepage h1{
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1{background-image: url('../img/hockey.jpg');}
+.slide2{background-image: url('../img/chat.jpg');}
+.slide3{background-image: url('../img/share.jpeg');}
+
+.slide-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* SLIDER */
+
+/*.homepage h1{
   margin-top: 100px;
   font-size: 55px;
   margin-bottom: 10px;
@@ -113,7 +137,7 @@ header a:hover{
   font-size: 30px;
   text-align: center;
   color: #404040;
-}
+}*/
 
 /* login modal */
 .modal{
@@ -259,12 +283,13 @@ span.register{
 
 /* footer */
 footer{
-  position: absolute;
-  background:#b3b3b3;
-  color: #ffffff;
+  /*position: absolute;*/
+  /*background:#b3b3b3;*/
+  background: #f8f8ff;
+  color: #cccccc;
   padding-top:10px;
   min-height: 40px;
-  border-top:3px solid #1e90ff;
+  /*border-top:1px solid #1e90ff;*/
   bottom: 0;
   left: 0;
   right: 0;
